@@ -1,23 +1,23 @@
-import React from 'react';
-import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Recommended from './Recommended';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Recommended from "./Recommended";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="app">
-    
+      <Header />
 
-    <Header/>
+      <div className="app__page">
+        <Sidebar />
 
-    <div className="app__page">
-    <Sidebar/>
-    <Recommended/>   
+        <Recommended />
+      </div>
+      <Footer />
     </div>
-
-    </div>
-      );
+  );
 }
 
 export default App;
